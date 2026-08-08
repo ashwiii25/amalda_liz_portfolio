@@ -1,0 +1,8 @@
+{
+  "name": "amalda liz portfolio",
+  "description": "A structural wireframe recreation of the Angelic Emails Framer template, focusing on layout, grids, flex containers, typography hierarchy, and spacing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
