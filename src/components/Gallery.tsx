@@ -1,6 +1,7 @@
 import { motion, AnimatePresence, useScroll, useTransform } from 'motion/react';
 import { memo, useEffect, useState, useRef, MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const galleryImages = [
   "1.jpg",
@@ -89,6 +90,13 @@ const Gallery = memo(function Gallery() {
 
   return (
     <>
+      <Helmet>
+        <title>Gallery | Amalda Liz</title>
+        <meta name="description" content="Explore the portfolio archive of Amalda Liz, featuring editorial photography and runway moments." />
+        <meta property="og:title" content="Gallery | Amalda Liz" />
+        <meta property="og:description" content="Explore the portfolio archive of Amalda Liz, featuring editorial photography and runway moments." />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="bg-[#fafafa] min-h-screen text-black">
         <motion.div 
           initial={{ opacity: 0 }}

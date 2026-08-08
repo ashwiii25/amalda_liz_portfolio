@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useRef, memo, ReactNode } from 'react';
-import { Instagram, Facebook, Film, AtSign } from 'lucide-react';
+import { Instagram, Facebook, Film, AtSign, Mail } from 'lucide-react';
 
 const socialLinks = [
   { name: 'Instagram', icon: <Instagram size={36} strokeWidth={2} />, href: 'https://www.instagram.com/amaldaliz/?hl=en' },
@@ -74,6 +74,15 @@ const Footer = memo(function Footer() {
             <div className="text-[#999] uppercase text-[12px] tracking-[0.2em] font-extrabold">Socials</div>
             <div className="flex flex-wrap items-center gap-8">
               {socialLinks.map(renderSocialLink)}
+            </div>
+            <div className="mt-2">
+              <a 
+                href="mailto:amaldajliz@gmail.com" 
+                className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-white rounded-md p-2 -ml-2 transition-colors duration-300"
+              >
+                <Mail size={36} strokeWidth={2} className="text-[#ddd] group-hover:text-brand-white transition-colors duration-300" />
+                <span className="text-[#ddd] group-hover:text-brand-white transition-colors duration-300 font-bold text-[18px] md:text-[20px] tracking-tight">: amaldajliz@gmail.com</span>
+              </a>
             </div>
           </motion.div>
         </div>

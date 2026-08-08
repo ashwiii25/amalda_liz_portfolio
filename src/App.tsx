@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import { motion, AnimatePresence } from 'motion/react';
@@ -19,6 +20,13 @@ const Home = () => (
     exit={{ opacity: 0 }}
     transition={{ duration: 0.6 }}
   >
+    <Helmet>
+      <title>Amalda Liz | Portfolio</title>
+      <meta name="description" content="Portfolio of Amalda Liz, showcasing her work in modeling and film." />
+      <meta property="og:title" content="Amalda Liz | Portfolio" />
+      <meta property="og:description" content="Portfolio of Amalda Liz, showcasing her work in modeling and film." />
+      <meta property="og:type" content="website" />
+    </Helmet>
     <main className="relative">
       <Hero />
       <div className="relative z-10 bg-white w-full">
